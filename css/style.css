@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Serif Text", serif;
+}
+/*nav bar start*/
+.topnav {
+  overflow: hidden;
+  background-color:#00E6C3;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#00FE00;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:#00FE00;
+  color: #000;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*nav bar end*/
+
+/*header section start*/
+.main {
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+}
+.main-img img {
+  width: 20rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/*header section end*/
+/*about section start*/
+.main-section,
+.sub-section,
+.inner-section {
+  margin-top: 10px;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.about-header {
+  text-align: center;
+}
+.about-text {
+  text-align: justify;
+}
+.inner-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  font-size: 2rem;
+}
+.inner-section img {
+  height: 200px;
+  width: 200px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .inner-card {
+    display: block;
+  }
+}
+
+#project-img1,
+#project-img2,
+#project-img3 {
+  width: 100%;
+}
+
+/*about section end*/
+
+/*project section start*/
+.button {
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background-color: #00E6C3;
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {
+  background-color:#00FE00;
+  border: 1px solid black;
+}
+
+.button:active {
+  background-color: #FE3100;
+  box-shadow: 0 5px #000;
+  /* transform: translateY(4px); */
+}
+/*project section end*/
